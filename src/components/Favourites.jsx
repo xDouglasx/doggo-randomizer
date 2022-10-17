@@ -1,6 +1,6 @@
 import DoggoCard from "./DoggoCard"
 import { Row } from "antd"
-import { RedoOutlined } from '@ant-design/icons';
+import { DeleteOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { useEffect, useState } from 'react'
 
@@ -24,7 +24,7 @@ const Favourites = () => {
     return(
 
         <div>
-            <Button onClick={clearLocalStorage} type="primary" shape="round" icon={<RedoOutlined />} size="large">
+            <Button onClick={clearLocalStorage} type="primary" shape="round" icon={<DeleteOutlined />} size="large">
                 Clear Favourite Dogs </Button>
             <Row gutter={[32, 32]} className="doggo-card-container">
 
